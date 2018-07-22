@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Standard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/circle"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/circle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_android_24dp"
+        android:background="@drawable/background_circle_info"
+        app:tint="@android:color/white"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/roundRectangle"
+        app:layout_constraintTop_toBottomOf="@id/standard"
+        app:layout_constraintBottom_toTopOf="@id/preLollipop"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/roundRectangle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_android_24dp"
+        android:background="@drawable/background_round_rectangle_info"
+        app:tint="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/circle"
+        app:layout_constraintEnd_toStartOf="@id/roundRectangleWhite"
+        app:layout_constraintTop_toBottomOf="@id/standard"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/roundRectangleWhite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_android_24dp"
+        android:background="@drawable/background_circle_light_info"
+        app:tint="@android:color/black"
+        app:layout_constraintStart_toEndOf="@id/roundRectangle"
+        app:layout_constraintEnd_toStartOf="@id/layerDrawableTest"
+        app:layout_constraintTop_toBottomOf="@id/standard"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/layerDrawableTest"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_android_24dp"
+        android:background="@drawable/background_round_rectangle_light_info"
+        app:tint="@android:color/white"
+        app:backgroundTint="@color/info"
+        app:layout_constraintStart_toEndOf="@id/roundRectangleWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/standard"/>
+
+    <TextView
+        android:id="@+id/preLollipop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Pre-Lollipop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle"
+        app:layout_constraintBottom_toTopOf="@id/circlePreLollipop"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/circlePreLollipop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_android_24dp"
+        android:background="@drawable/background_circle_pre_lollipop"
+        app:tint="@android:color/white"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/roundRectanglePreLollipop"
+        app:layout_constraintTop_toBottomOf="@id/preLollipop"
+        app:layout_constraintBottom_toTopOf="@id/clear"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/roundRectanglePreLollipop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_android_24dp"
+        android:background="@drawable/background_round_rectangle_pre_lollipop"
+        app:tint="@android:color/white"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@id/circlePreLollipop"
+        app:layout_constraintEnd_toStartOf="@id/roundRectangleWhitePreLollipop"
+        app:layout_constraintTop_toBottomOf="@id/preLollipop"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/roundRectangleWhitePreLollipop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_android_24dp"
+        android:background="@drawable/background_round_rectangle_white_pre_lollipop"
+        app:tint="@color/icon_black"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@id/roundRectanglePreLollipop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/preLollipop" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:text="clear"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/circlePreLollipop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/radioGroup"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clear">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/activated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="activated"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="selected"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/disabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="disabled"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/hovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hovered"/>
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>
