@@ -1,0 +1,6 @@
+include ':app'
+
+def modulesDir = new File('modules')
+
+include ':sample1'
+project(':sample1').projectDir = new File(modulesDir, 'sample1')
