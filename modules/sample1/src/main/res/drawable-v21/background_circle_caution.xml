@@ -25,7 +25,7 @@
                     <solid android:color="@android:color/transparent"/>
                 </shape>
             </item>
-            <item android:drawable="@drawable/circle_info_overlay"/>
+            <item android:drawable="@drawable/circle_caution_overlay"/>
         </selector>
     </item>
 </ripple>

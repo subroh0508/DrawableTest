@@ -1,116 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_enabled="false">
-        <layer-list>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="@color/warning"/>
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#61FFFFFF"/>
-                </shape>
-            </item>
-        </layer-list>
+        <shape android:shape="oval">
+            <solid android:color="@color/warning_disabled"/>
+        </shape>
     </item>
     <item android:state_hovered="true">
-        <layer-list>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="@color/warning"/>
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#14FFFFFF"/>
-                </shape>
-            </item>
-        </layer-list>
+        <shape android:shape="oval">
+            <solid android:color="@color/warning_hovered"/>
+        </shape>
     </item>
     <item android:state_pressed="true">
-        <layer-list>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="@color/warning"/>
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#52FFFFFF"/>
-                </shape>
-            </item>
-        </layer-list>
+        <shape android:shape="oval">
+            <solid android:color="@color/warning_pressed"/>
+        </shape>
     </item>
     <item android:state_activated="true">
-        <layer-list>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="@color/warning"/>
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#3DFFFFFF"/>
-                </shape>
-            </item>
-        </layer-list>
+        <shape android:shape="oval">
+            <solid android:color="@color/warning_activated"/>
+        </shape>
     </item>
     <item android:state_focused="true">
-        <layer-list>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="@color/warning"/>
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#3DFFFFFF"/>
-                </shape>
-            </item>
-        </layer-list>
+        <shape android:shape="oval">
+            <solid android:color="@color/warning_focused"/>
+        </shape>
     </item>
     <item android:state_selected="true">
-        <layer-list>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="@color/warning"/>
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#29FFFFFF"/>
-                </shape>
-            </item>
-        </layer-list>
-    </item>
-    <item android:state_drag_hovered="true">
-        <layer-list>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="@color/warning"/>
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#29FFFFFF"/>
-                </shape>
-            </item>
-        </layer-list>
-    </item>
-    <item android:state_drag_can_accept="true">
-        <layer-list>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="@color/warning"/>
-                </shape>
-            </item>
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="#29FFFFFF"/>
-                </shape>
-            </item>
-        </layer-list>
+        <shape android:shape="oval">
+            <solid android:color="@color/warning_selected"/>
+        </shape>
     </item>
     <item>
         <shape android:shape="oval">

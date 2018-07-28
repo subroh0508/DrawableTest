@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="#52FFFFFF">
+    android:color="@color/white_overlay_pressed">
+
+    <item android:id="@android:id/mask">
+        <shape>
+            <corners android:radius="6dp"/>
+            <solid android:color="@color/info"/>
+        </shape>
+    </item>
 
     <item>
         <selector>
             <item android:state_pressed="true">
                 <shape>
                     <corners android:radius="6dp"/>
-                    <solid android:color="#FFFFFF"/>
+                    <solid android:color="@color/info"/>
                 </shape>
             </item>
             <item android:state_hovered="true">
                 <shape>
                     <corners android:radius="6dp"/>
-                    <solid android:color="#FFFFFF"/>
+                    <solid android:color="@color/info"/>
                 </shape>
             </item>
             <item android:state_focused="true">
                 <shape>
                     <corners android:radius="6dp"/>
-                    <solid android:color="#FFFFFF"/>
+                    <solid android:color="@color/info"/>
                 </shape>
             </item>
-            <item>
-                <shape>
-                    <corners android:radius="6dp"/>
-                    <solid android:color="@color/background_light"/>
-                </shape>
-            </item>
+            <item android:drawable="@drawable/round_rectangle_info"/>
         </selector>
     </item>
 </ripple>

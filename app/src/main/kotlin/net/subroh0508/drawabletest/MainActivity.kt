@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    private val adapter: FragmentAdapter by lazy { FragmentAdapter(supportFragmentManager) }
+    private val adapter: FragmentAdapter by lazy { FragmentAdapter(this, supportFragmentManager) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

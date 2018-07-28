@@ -3,4 +3,48 @@
     <color name="info">#8BC34A</color>
     <color name="warning">#FFC107</color>
     <color name="caution">#F44336</color>
+
+    <color name="info_disabled">#618BC34A</color>
+    <color name="info_hovered">#EB8BC34A</color>
+    <color name="info_pressed">#AD8BC34A</color>
+    <color name="info_activated">#C28BC34A</color>
+    <color name="info_focused">#C28BC34A</color>
+    <color name="info_selected">#D68BC34A</color>
+    <color name="info_dragged">#D68BC34A</color>
+
+    <color name="info_overlay_selected">#148BC34A</color>
+    <color name="info_overlay_activated">#1F8BC34A</color>
+
+    <color name="warning_disabled">#61FFC107</color>
+    <color name="warning_hovered">#EBFFC107</color>
+    <color name="warning_pressed">#ADFFC107</color>
+    <color name="warning_activated">#C2FFC107</color>
+    <color name="warning_focused">#C2FFC107</color>
+    <color name="warning_selected">#D6FFC107</color>
+    <color name="warning_dragged">#D6FFC107</color>
+
+    <color name="warning_overlay_selected">#14FFC107</color>
+    <color name="warning_overlay_activated">#1FFFC107</color>
+
+    <color name="caution_disabled">#61F44336</color>
+    <color name="caution_hovered">#EBF44336</color>
+    <color name="caution_pressed">#ADF44336</color>
+    <color name="caution_activated">#C2F44336</color>
+    <color name="caution_focused">#C2F44336</color>
+    <color name="caution_selected">#D6F44336</color>
+    <color name="caution_dragged">#D6F44336</color>
+
+    <color name="caution_overlay_selected">#14F44336</color>
+    <color name="caution_overlay_activated">#1FF44336</color>
+
+    <color name="black_overlay_disabled">#00000000</color>
+    <color name="black_overlay_hovered">#0A000000</color>
+    <color name="black_overlay_pressed">#29000000</color>
+    <color name="black_overlay_focused">#1F000000</color>
+    <color name="black_overlay_dragged">#14000000</color>
+
+    <color name="white_overlay_pressed">#52FFFFFF</color>
+
+    <color name="icon">#616161</color>
+    <color name="icon_disabled">#61616161</color>
 </resources>

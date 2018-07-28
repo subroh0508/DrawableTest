@@ -6,172 +6,210 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/standard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="Standard"
+        android:id="@+id/info"
+        style="@style/TitleText"
+        android:text="@string/info"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/circle"/>
+        app:layout_constraintBottom_toTopOf="@id/circleInfo"/>
 
     <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/circle"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="8dp"
-        android:padding="8dp"
+        android:id="@+id/circleInfo"
+        style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/background_circle_info"
+        android:background="@drawable/button_circle_info"
         app:tint="@android:color/white"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/roundRectangle"
-        app:layout_constraintTop_toBottomOf="@id/standard"
-        app:layout_constraintBottom_toTopOf="@id/preLollipop"/>
+        app:layout_constraintEnd_toStartOf="@id/roundRectangleInfo"
+        app:layout_constraintTop_toBottomOf="@id/info"
+        app:layout_constraintBottom_toTopOf="@id/warning"/>
 
     <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/roundRectangle"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="8dp"
-        android:padding="8dp"
+        android:id="@+id/roundRectangleInfo"
+        style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
+        android:background="@drawable/button_round_rectangle_info"
+        app:tint="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/circleInfo"
+        app:layout_constraintEnd_toStartOf="@id/circleInfoOverlay"
+        app:layout_constraintTop_toTopOf="@id/circleInfo"
+        app:layout_constraintBottom_toBottomOf="@id/circleInfo"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/circleInfoOverlay"
+        style="@style/Icon"
+        android:src="@drawable/ic_android_stateful_info_24dp"
+        android:background="@drawable/background_circle_info"
+        app:layout_constraintStart_toEndOf="@id/roundRectangleInfo"
+        app:layout_constraintEnd_toStartOf="@id/roundRectangleInfoOverlay"
+        app:layout_constraintTop_toTopOf="@id/circleInfo"
+        app:layout_constraintBottom_toBottomOf="@id/circleInfo"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/roundRectangleInfoOverlay"
+        style="@style/Icon"
+        android:src="@drawable/ic_android_stateful_info_24dp"
         android:background="@drawable/background_round_rectangle_info"
-        app:tint="@android:color/white"
-        app:layout_constraintStart_toEndOf="@id/circle"
-        app:layout_constraintEnd_toStartOf="@id/roundRectangleWhite"
-        app:layout_constraintTop_toBottomOf="@id/standard"/>
-
-    <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/roundRectangleWhite"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/background_circle_light_info"
-        app:tint="@android:color/black"
-        app:layout_constraintStart_toEndOf="@id/roundRectangle"
-        app:layout_constraintEnd_toStartOf="@id/layerDrawableTest"
-        app:layout_constraintTop_toBottomOf="@id/standard"/>
-
-    <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/layerDrawableTest"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/background_round_rectangle_light_info"
-        app:tint="@android:color/white"
-        app:backgroundTint="@color/info"
-        app:layout_constraintStart_toEndOf="@id/roundRectangleWhite"
+        app:layout_constraintStart_toEndOf="@id/circleInfoOverlay"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/standard"/>
+        app:layout_constraintTop_toTopOf="@id/circleInfo"
+        app:layout_constraintBottom_toBottomOf="@id/circleInfo"/>
 
     <TextView
-        android:id="@+id/preLollipop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="Pre-Lollipop"
+        android:id="@+id/warning"
+        style="@style/TitleText"
+        android:text="@string/warning"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/circle"
-        app:layout_constraintBottom_toTopOf="@id/circlePreLollipop"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circleInfo"
+        app:layout_constraintBottom_toTopOf="@id/circleWarning"/>
 
     <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/circlePreLollipop"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="8dp"
-        android:padding="8dp"
+        android:id="@+id/circleWarning"
+        style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/background_circle_pre_lollipop"
+        android:background="@drawable/button_circle_warning"
         app:tint="@android:color/white"
-        app:backgroundTint="@color/colorAccent"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/roundRectanglePreLollipop"
-        app:layout_constraintTop_toBottomOf="@id/preLollipop"
+        app:layout_constraintEnd_toStartOf="@id/roundRectangleWarning"
+        app:layout_constraintTop_toBottomOf="@id/warning"
+        app:layout_constraintBottom_toTopOf="@id/caution"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/roundRectangleWarning"
+        style="@style/Icon"
+        android:src="@drawable/ic_android_24dp"
+        android:background="@drawable/button_round_rectangle_warning"
+        app:tint="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/circleWarning"
+        app:layout_constraintEnd_toStartOf="@id/circleWarningOverlay"
+        app:layout_constraintTop_toTopOf="@id/circleWarning"
+        app:layout_constraintBottom_toBottomOf="@id/circleWarning"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/circleWarningOverlay"
+        style="@style/Icon"
+        android:src="@drawable/ic_android_stateful_warning_24dp"
+        android:background="@drawable/background_circle_warning"
+        app:layout_constraintStart_toEndOf="@id/roundRectangleWarning"
+        app:layout_constraintEnd_toStartOf="@id/roundRectangleWarningOverlay"
+        app:layout_constraintTop_toTopOf="@id/circleWarning"
+        app:layout_constraintBottom_toBottomOf="@id/circleWarning"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/roundRectangleWarningOverlay"
+        style="@style/Icon"
+        android:src="@drawable/ic_android_stateful_warning_24dp"
+        android:background="@drawable/background_round_rectangle_warning"
+        app:layout_constraintStart_toEndOf="@id/circleWarningOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/circleWarning"
+        app:layout_constraintBottom_toBottomOf="@id/circleWarning"/>
+
+    <TextView
+        android:id="@+id/caution"
+        style="@style/TitleText"
+        android:text="@string/caution"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circleWarning"
+        app:layout_constraintBottom_toTopOf="@id/circleCaution"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/circleCaution"
+        style="@style/Icon"
+        android:src="@drawable/ic_android_24dp"
+        android:background="@drawable/button_circle_caution"
+        app:tint="@android:color/white"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/roundRectangleCaution"
+        app:layout_constraintTop_toBottomOf="@id/caution"
         app:layout_constraintBottom_toTopOf="@id/clear"/>
 
     <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/roundRectanglePreLollipop"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="8dp"
-        android:padding="8dp"
+        android:id="@+id/roundRectangleCaution"
+        style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/background_round_rectangle_pre_lollipop"
+        android:background="@drawable/button_round_rectangle_caution"
         app:tint="@android:color/white"
-        app:backgroundTint="@color/colorAccent"
-        app:layout_constraintStart_toEndOf="@id/circlePreLollipop"
-        app:layout_constraintEnd_toStartOf="@id/roundRectangleWhitePreLollipop"
-        app:layout_constraintTop_toBottomOf="@id/preLollipop"/>
+        app:layout_constraintStart_toEndOf="@id/circleCaution"
+        app:layout_constraintEnd_toStartOf="@id/circleCautionOverlay"
+        app:layout_constraintTop_toTopOf="@id/circleCaution"
+        app:layout_constraintBottom_toBottomOf="@+id/circleCaution"/>
 
     <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/roundRectangleWhitePreLollipop"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/background_round_rectangle_white_pre_lollipop"
-        app:tint="@color/icon_black"
-        app:backgroundTint="@color/colorAccent"
-        app:layout_constraintStart_toEndOf="@id/roundRectanglePreLollipop"
+        android:id="@+id/circleCautionOverlay"
+        style="@style/Icon"
+        android:src="@drawable/ic_android_stateful_caution_24dp"
+        android:background="@drawable/background_circle_caution"
+        app:layout_constraintStart_toEndOf="@id/roundRectangleCaution"
+        app:layout_constraintEnd_toStartOf="@id/roundRectangleCautionOverlay"
+        app:layout_constraintTop_toTopOf="@id/circleCaution"
+        app:layout_constraintBottom_toBottomOf="@+id/circleCaution"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/roundRectangleCautionOverlay"
+        style="@style/Icon"
+        android:src="@drawable/ic_android_stateful_caution_24dp"
+        android:background="@drawable/background_round_rectangle_caution"
+        app:layout_constraintStart_toEndOf="@id/circleCautionOverlay"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/preLollipop" />
+        app:layout_constraintTop_toTopOf="@id/circleCaution"
+        app:layout_constraintBottom_toBottomOf="@+id/circleCaution"/>
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:layout_margin="8dp"
-        android:text="clear"
+        style="@style/Button"
+        android:text="@string/clear"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintTop_toBottomOf="@id/circlePreLollipop"
+        app:layout_constraintTop_toBottomOf="@id/circleCaution"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/radioGroup"/>
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
+        style="@style/RadioGroup"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/clear">
+        app:layout_constraintTop_toBottomOf="@id/clear"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <android.support.v7.widget.AppCompatRadioButton
             android:id="@+id/activated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="activated"/>
+            android:text="@string/activated"/>
 
         <android.support.v7.widget.AppCompatRadioButton
             android:id="@+id/selected"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="selected"/>
+            android:text="@string/selected"/>
 
         <android.support.v7.widget.AppCompatRadioButton
             android:id="@+id/disabled"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="disabled"/>
+            android:text="@string/disabled"/>
 
         <android.support.v7.widget.AppCompatRadioButton
             android:id="@+id/hovered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hovered"/>
+            android:text="@string/hovered"/>
     </RadioGroup>
 </android.support.constraint.ConstraintLayout>

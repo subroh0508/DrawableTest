@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/black_overlay_pressed">
+    android:color="@color/white_overlay_pressed">
 
     <item android:id="@android:id/mask">
         <shape android:shape="oval">
-            <solid android:color="@android:color/white"/>
+            <solid android:color="@color/info"/>
         </shape>
     </item>
 
@@ -12,20 +12,20 @@
         <selector>
             <item android:state_pressed="true">
                 <shape android:shape="oval">
-                    <solid android:color="@android:color/transparent"/>
+                    <solid android:color="@color/info"/>
                 </shape>
             </item>
             <item android:state_hovered="true">
                 <shape android:shape="oval">
-                    <solid android:color="@android:color/transparent"/>
+                    <solid android:color="@color/info"/>
                 </shape>
             </item>
             <item android:state_focused="true">
                 <shape android:shape="oval">
-                    <solid android:color="@android:color/transparent"/>
+                    <solid android:color="@color/info"/>
                 </shape>
             </item>
-            <item android:drawable="@drawable/circle_info_overlay"/>
+            <item android:drawable="@drawable/circle_info"/>
         </selector>
     </item>
 </ripple>
