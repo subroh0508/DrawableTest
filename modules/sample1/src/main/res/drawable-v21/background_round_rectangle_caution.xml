@@ -29,18 +29,6 @@
                     <solid android:color="@android:color/transparent"/>
                 </shape>
             </item>
-            <!--
-            <item android:state_hovered="true">
-                <shape android:shape="oval">
-                    <solid android:color="@color/caution"/>
-                </shape>
-            </item>
-            <item android:state_focused="true">
-                <shape android:shape="oval">
-                    <solid android:color="@color/caution"/>
-                </shape>
-            </item>
-            -->
             <item android:drawable="@drawable/round_rectangle_caution_overlay"/>
         </selector>
     </item>
