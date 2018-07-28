@@ -1,0 +1,13 @@
+<resources>
+    <string name="example_fragment_2_title">Example 2</string>
+
+    <string name="info">Info</string>
+    <string name="warning">Warning</string>
+    <string name="caution">Caution</string>
+
+    <string name="clear">clear</string>
+    <string name="activated">activated</string>
+    <string name="selected">selected</string>
+    <string name="disabled">disabled</string>
+    <string name="hovered">hovered</string>
+</resources>
