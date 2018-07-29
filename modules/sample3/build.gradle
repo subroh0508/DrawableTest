@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
@@ -7,7 +7,6 @@ android {
     buildToolsVersion versions.buildTools
 
     defaultConfig {
-        applicationId "net.subroh0508.drawabletest"
         minSdkVersion versions.minSdk
         targetSdkVersion versions.targetSdk
 
@@ -27,12 +26,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':sample1')
-    implementation project(':sample2')
-    implementation project(':sample3')
 
     implementation dep.kotlin.stdlib
-    implementation dep.supportLibrary.v4
     implementation dep.supportLibrary.appcompat
     implementation dep.supportLibrary.preference
     implementation dep.supportLibrary.cardView

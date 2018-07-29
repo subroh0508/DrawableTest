@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="info">#8BC34A</color>
+    <color name="warning">#FFC107</color>
+    <color name="caution">#F44336</color>
+
+    <color name="info_overlay_selected">#148BC34A</color>
+    <color name="info_overlay_activated">#1F8BC34A</color>
+
+    <color name="warning_overlay_selected">#14FFC107</color>
+    <color name="warning_overlay_activated">#1FFFC107</color>
+
+    <color name="caution_overlay_selected">#14F44336</color>
+    <color name="caution_overlay_activated">#1FF44336</color>
+
+    <color name="black_overlay_disabled">#00000000</color>
+    <color name="black_overlay_hovered">#0A000000</color>
+    <color name="black_overlay_pressed">#29000000</color>
+    <color name="black_overlay_focused">#1F000000</color>
+    <color name="black_overlay_dragged">#14000000</color>
+
+    <color name="white_overlay_disabled">#61FFFFFF</color>
+    <color name="white_overlay_hovered">#EBFFFFFF</color>
+    <color name="white_overlay_pressed">#ADFFFFFF</color>
+    <color name="white_overlay_activated">#C2FFFFFF</color>
+    <color name="white_overlay_focused">#C2FFFFFF</color>
+    <color name="white_overlay_selected">#D6FFFFFF</color>
+    <color name="white_overlay_dragged">#D6FFFFFF</color>
+
+    <color name="black_ripple">#29000000</color>
+    <color name="white_ripple">#52FFFFFF</color>
+
+    <color name="icon">#616161</color>
+    <color name="icon_disabled">#61616161</color>
+</resources>
