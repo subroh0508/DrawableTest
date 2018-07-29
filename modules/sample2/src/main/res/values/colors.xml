@@ -43,7 +43,8 @@
     <color name="black_overlay_focused">#1F000000</color>
     <color name="black_overlay_dragged">#14000000</color>
 
-    <color name="white_overlay_pressed">#52FFFFFF</color>
+    <color name="black_ripple">#29000000</color>
+    <color name="white_ripple">#52FFFFFF</color>
 
     <color name="icon">#616161</color>
     <color name="icon_disabled">#61616161</color>
