@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter
 import net.subroh0508.sample1.ExampleFragment1
 import net.subroh0508.sample2.ExampleFragment2
 import net.subroh0508.sample3.ExampleFragment3
+import net.subroh0508.sample4.ExampleFragment4
 
 class FragmentAdapter(private val context: Context, manager: FragmentManager) : FragmentPagerAdapter(manager) {
     override fun getItem(position: Int): Fragment {
@@ -14,6 +15,7 @@ class FragmentAdapter(private val context: Context, manager: FragmentManager) : 
             0 -> ExampleFragment1()
             1 -> ExampleFragment2()
             2 -> ExampleFragment3()
+            3 -> ExampleFragment4()
             else -> throw IllegalStateException()
         }
     }
@@ -23,9 +25,10 @@ class FragmentAdapter(private val context: Context, manager: FragmentManager) : 
             0 -> context.getString(R.string.example_fragment_1_title)
             1 -> context.getString(R.string.example_fragment_2_title)
             2 -> context.getString(R.string.example_fragment_3_title)
+            3 -> context.getString(R.string.example_fragment_4_title)
             else -> throw IllegalStateException()
         }
     }
 
-    override fun getCount() = 3
+    override fun getCount() = 4
 }

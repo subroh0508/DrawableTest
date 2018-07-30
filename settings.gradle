@@ -2,7 +2,8 @@ include ':app'
 
 def modulesDir = new File('modules')
 
-include ':sample1', ':sample2', ':sample3'
+include ':sample1', ':sample2', ':sample3', ':sample4'
 project(':sample1').projectDir = new File(modulesDir, 'sample1')
 project(':sample2').projectDir = new File(modulesDir, 'sample2')
 project(':sample3').projectDir = new File(modulesDir, 'sample3')
+project(':sample4').projectDir = new File(modulesDir, 'sample4')
