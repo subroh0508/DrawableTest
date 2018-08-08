@@ -12,22 +12,22 @@
         <selector>
             <item android:state_pressed="true">
                 <shape android:shape="oval">
-                    <solid android:color="@android:color/transparent"/>
+                    <solid android:color="@android:color/white"/>
                 </shape>
             </item>
             <item android:state_focused="true">
                 <shape android:shape="oval">
-                    <solid android:color="@android:color/transparent"/>
+                    <solid android:color="@android:color/white"/>
                 </shape>
             </item>
             <item android:state_hovered="true">
                 <shape android:shape="oval">
-                    <solid android:color="@android:color/transparent"/>
+                    <solid android:color="@android:color/white"/>
                 </shape>
             </item>
             <item>
                 <shape android:shape="oval">
-                    <solid android:color="@color/overlay_black"/>
+                    <solid android:color="@color/s5_overlay_caution"/>
                 </shape>
             </item>
         </selector>

@@ -18,13 +18,21 @@
         app:layout_constraintBottom_toTopOf="@id/circleInfo"/>
 
     <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/circleInfoBack"
+        style="@style/Icon"
+        android:background="@drawable/s5_circle"
+        app:backgroundTint="@color/info"
+        app:layout_constraintTop_toTopOf="@id/circleInfo"
+        app:layout_constraintBottom_toBottomOf="@id/circleInfo"
+        app:layout_constraintStart_toStartOf="@id/circleInfo"
+        app:layout_constraintEnd_toEndOf="@id/circleInfo"/>
+
+    <android.support.v7.widget.AppCompatImageView
         android:id="@+id/circleInfo"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/circle"
-        android:foreground="@drawable/circle_overlay_white"
+        android:background="@drawable/s5_circle_overlay_white"
         app:tint="@android:color/white"
-        app:backgroundTint="@color/info"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,13 +41,21 @@
         app:layout_constraintBottom_toTopOf="@id/warning"/>
 
     <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/roundRectangleInfoBack"
+        style="@style/Icon"
+        android:background="@drawable/s5_round_rectangle"
+        app:backgroundTint="@color/info"
+        app:layout_constraintTop_toTopOf="@id/roundRectangleInfo"
+        app:layout_constraintBottom_toBottomOf="@id/roundRectangleInfo"
+        app:layout_constraintStart_toStartOf="@id/roundRectangleInfo"
+        app:layout_constraintEnd_toEndOf="@id/roundRectangleInfo"/>
+
+    <android.support.v7.widget.AppCompatImageView
         android:id="@+id/roundRectangleInfo"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/round_rectangle"
-        android:foreground="@drawable/round_rectangle_overlay_white"
+        android:background="@drawable/s5_round_rectangle_overlay_white"
         app:tint="@android:color/white"
-        app:backgroundTint="@color/info"
         app:layout_constraintStart_toEndOf="@id/circleInfo"
         app:layout_constraintEnd_toStartOf="@id/circleInfoOverlay"
         app:layout_constraintTop_toTopOf="@id/circleInfo"
@@ -49,10 +65,8 @@
         android:id="@+id/circleInfoOverlay"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/circle"
-        android:foreground="@drawable/circle_overlay_black"
-        app:tint="@color/icon_overlay_info"
-        app:backgroundTint="@color/overlay_info"
+        android:background="@drawable/s5_circle_overlay_info"
+        app:tint="@color/s5_icon_overlay_info"
         app:layout_constraintStart_toEndOf="@id/roundRectangleInfo"
         app:layout_constraintEnd_toStartOf="@id/roundRectangleInfoOverlay"
         app:layout_constraintTop_toTopOf="@id/circleInfo"
@@ -62,10 +76,8 @@
         android:id="@+id/roundRectangleInfoOverlay"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/round_rectangle"
-        android:foreground="@drawable/round_rectangle_overlay_black"
-        app:tint="@color/icon_overlay_info"
-        app:backgroundTint="@color/overlay_info"
+        android:background="@drawable/s5_round_rectangle_overlay_info"
+        app:tint="@color/s5_icon_overlay_info"
         app:layout_constraintStart_toEndOf="@id/circleInfoOverlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/circleInfo"
@@ -82,13 +94,21 @@
         app:layout_constraintBottom_toTopOf="@id/circleWarning"/>
 
     <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/circleWarningBack"
+        style="@style/Icon"
+        android:background="@drawable/s5_circle"
+        app:backgroundTint="@color/warning"
+        app:layout_constraintTop_toTopOf="@id/circleWarning"
+        app:layout_constraintBottom_toBottomOf="@id/circleWarning"
+        app:layout_constraintStart_toStartOf="@id/circleWarning"
+        app:layout_constraintEnd_toEndOf="@id/circleWarning"/>
+
+    <android.support.v7.widget.AppCompatImageView
         android:id="@+id/circleWarning"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/circle"
-        android:foreground="@drawable/circle_overlay_white"
+        android:background="@drawable/s5_circle_overlay_white"
         app:tint="@android:color/white"
-        app:backgroundTint="@color/warning"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,13 +117,21 @@
         app:layout_constraintBottom_toTopOf="@id/caution"/>
 
     <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/roundRectangleWarningBack"
+        style="@style/Icon"
+        android:background="@drawable/s5_round_rectangle"
+        app:backgroundTint="@color/warning"
+        app:layout_constraintTop_toTopOf="@id/roundRectangleWarning"
+        app:layout_constraintBottom_toBottomOf="@id/roundRectangleWarning"
+        app:layout_constraintStart_toStartOf="@id/roundRectangleWarning"
+        app:layout_constraintEnd_toEndOf="@id/roundRectangleWarning"/>
+
+    <android.support.v7.widget.AppCompatImageView
         android:id="@+id/roundRectangleWarning"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/round_rectangle"
-        android:foreground="@drawable/round_rectangle_overlay_white"
+        android:background="@drawable/s5_round_rectangle_overlay_white"
         app:tint="@android:color/white"
-        app:backgroundTint="@color/warning"
         app:layout_constraintStart_toEndOf="@id/circleWarning"
         app:layout_constraintEnd_toStartOf="@id/circleWarningOverlay"
         app:layout_constraintTop_toTopOf="@id/circleWarning"
@@ -113,10 +141,8 @@
         android:id="@+id/circleWarningOverlay"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/circle"
-        android:foreground="@drawable/circle_overlay_black"
-        app:tint="@color/icon_overlay_warning"
-        app:backgroundTint="@color/overlay_warning"
+        android:background="@drawable/s5_circle_overlay_warning"
+        app:tint="@color/s5_icon_overlay_warning"
         app:layout_constraintStart_toEndOf="@id/roundRectangleWarning"
         app:layout_constraintEnd_toStartOf="@id/roundRectangleWarningOverlay"
         app:layout_constraintTop_toTopOf="@id/circleWarning"
@@ -126,10 +152,8 @@
         android:id="@+id/roundRectangleWarningOverlay"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/round_rectangle"
-        android:foreground="@drawable/round_rectangle_overlay_black"
-        app:tint="@color/icon_overlay_warning"
-        app:backgroundTint="@color/overlay_warning"
+        android:background="@drawable/s5_round_rectangle_overlay_warning"
+        app:tint="@color/s5_icon_overlay_warning"
         app:layout_constraintStart_toEndOf="@id/circleWarningOverlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/circleWarning"
@@ -146,13 +170,21 @@
         app:layout_constraintBottom_toTopOf="@id/circleCaution"/>
 
     <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/circleCautionBack"
+        style="@style/Icon"
+        android:background="@drawable/s5_circle"
+        app:backgroundTint="@color/caution"
+        app:layout_constraintTop_toTopOf="@id/circleCaution"
+        app:layout_constraintBottom_toBottomOf="@id/circleCaution"
+        app:layout_constraintStart_toStartOf="@id/circleCaution"
+        app:layout_constraintEnd_toEndOf="@id/circleCaution"/>
+
+    <android.support.v7.widget.AppCompatImageView
         android:id="@+id/circleCaution"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/circle"
-        android:foreground="@drawable/circle_overlay_white"
+        android:background="@drawable/s5_circle_overlay_white"
         app:tint="@android:color/white"
-        app:backgroundTint="@color/caution"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
@@ -161,13 +193,21 @@
         app:layout_constraintBottom_toTopOf="@id/clear"/>
 
     <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/roundRectangleCautionBack"
+        style="@style/Icon"
+        android:background="@drawable/s5_round_rectangle"
+        app:backgroundTint="@color/caution"
+        app:layout_constraintTop_toTopOf="@id/roundRectangleCaution"
+        app:layout_constraintBottom_toBottomOf="@id/roundRectangleCaution"
+        app:layout_constraintStart_toStartOf="@id/roundRectangleCaution"
+        app:layout_constraintEnd_toEndOf="@id/roundRectangleCaution"/>
+
+    <android.support.v7.widget.AppCompatImageView
         android:id="@+id/roundRectangleCaution"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/round_rectangle"
-        android:foreground="@drawable/round_rectangle_overlay_white"
+        android:background="@drawable/s5_round_rectangle_overlay_white"
         app:tint="@android:color/white"
-        app:backgroundTint="@color/caution"
         app:layout_constraintStart_toEndOf="@id/circleCaution"
         app:layout_constraintEnd_toStartOf="@id/circleCautionOverlay"
         app:layout_constraintTop_toTopOf="@id/circleCaution"
@@ -177,10 +217,8 @@
         android:id="@+id/circleCautionOverlay"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/circle"
-        android:foreground="@drawable/circle_overlay_black"
-        app:tint="@color/icon_overlay_caution"
-        app:backgroundTint="@color/overlay_caution"
+        android:background="@drawable/s5_circle_overlay_caution"
+        app:tint="@color/s5_icon_overlay_caution"
         app:layout_constraintStart_toEndOf="@id/roundRectangleCaution"
         app:layout_constraintEnd_toStartOf="@id/roundRectangleCautionOverlay"
         app:layout_constraintTop_toTopOf="@id/circleCaution"
@@ -190,10 +228,8 @@
         android:id="@+id/roundRectangleCautionOverlay"
         style="@style/Icon"
         android:src="@drawable/ic_android_24dp"
-        android:background="@drawable/round_rectangle"
-        android:foreground="@drawable/round_rectangle_overlay_black"
-        app:tint="@color/icon_overlay_caution"
-        app:backgroundTint="@color/overlay_caution"
+        android:background="@drawable/s5_round_rectangle_overlay_caution"
+        app:tint="@color/s5_icon_overlay_caution"
         app:layout_constraintStart_toEndOf="@id/circleCautionOverlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/circleCaution"

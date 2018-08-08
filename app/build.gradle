@@ -31,6 +31,7 @@ dependencies {
     implementation project(':sample2')
     implementation project(':sample3')
     implementation project(':sample4')
+    implementation project(':sample5')
 
     implementation dep.kotlin.stdlib
     implementation dep.supportLibrary.v4
