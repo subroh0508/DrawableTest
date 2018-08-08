@@ -5,7 +5,7 @@
     <item android:id="@android:id/mask">
         <shape>
             <corners android:radius="6dp"/>
-            <solid android:color="@color/opacity_white"/>
+            <solid android:color="@color/s3_opacity_white"/>
         </shape>
     </item>
 
@@ -32,7 +32,7 @@
             <item>
                 <shape>
                     <corners android:radius="6dp"/>
-                    <solid android:color="@color/opacity_white"/>
+                    <solid android:color="@color/s3_opacity_white"/>
                 </shape>
             </item>
         </selector>

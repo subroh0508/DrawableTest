@@ -27,7 +27,7 @@
             </item>
             <item>
                 <shape android:shape="oval">
-                    <solid android:color="@color/opacity_white"/>
+                    <solid android:color="@color/s3_opacity_white"/>
                 </shape>
             </item>
         </selector>

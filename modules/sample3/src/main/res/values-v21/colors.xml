@@ -19,6 +19,9 @@
     <color name="black_overlay_focused">#1F000000</color>
     <color name="black_overlay_dragged">#14000000</color>
 
+    <color name="black_opacity_activated">#1FFFFFFF</color>
+    <color name="black_opacity_selected">#14FFFFFF</color>
+
     <color name="white_opacity_disabled">#61FFFFFF</color>
     <color name="white_opacity_hovered">#EBFFFFFF</color>
     <color name="white_opacity_pressed">#ADFFFFFF</color>
