@@ -27,7 +27,7 @@
             </item>
             <item>
                 <shape android:shape="oval">
-                    <solid android:color="@color/overlay_white"/>
+                    <solid android:color="@color/s4_overlay_white"/>
                 </shape>
             </item>
         </selector>

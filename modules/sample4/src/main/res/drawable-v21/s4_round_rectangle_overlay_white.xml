@@ -32,7 +32,7 @@
             <item>
                 <shape>
                     <corners android:radius="6dp"/>
-                    <solid android:color="@color/overlay_white"/>
+                    <solid android:color="@color/s4_overlay_white"/>
                 </shape>
             </item>
         </selector>
