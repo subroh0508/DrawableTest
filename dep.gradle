@@ -1,6 +1,6 @@
 ext.dep = [
         kotlin: [
-                stdlib: 'org.jetbrains.kotlin:kotlin-stdlib:1.2.51',
+                stdlib: 'org.jetbrains.kotlin:kotlin-stdlib:1.2.60',
         ],
         ktx: 'androidx.core:core-ktx:0.2',
         supportLibrary: [
