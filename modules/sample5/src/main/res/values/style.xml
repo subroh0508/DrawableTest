@@ -13,8 +13,14 @@
         <item name="android:padding">@dimen/icon_padding</item>
     </style>
 
-    <style name="Icon.Frame" parent="Icon">
+    <style name="FrameLayout">
+        <item name="android:layout_width">@dimen/icon_size</item>
+        <item name="android:layout_height">@dimen/icon_size</item>
         <item name="android:layout_margin">@dimen/icon_margin</item>
+    </style>
+
+    <style name="FrameLayout.Icon">
+        <item name="android:layout_margin">0dp</item>
         <item name="android:padding">@dimen/icon_padding</item>
     </style>
 

@@ -3,7 +3,8 @@
     android:color="@color/black_overlay_pressed">
 
     <item android:id="@android:id/mask">
-        <shape android:shape="oval">
+        <shape>
+            <corners android:radius="6dp"/>
             <solid android:color="@android:color/white"/>
         </shape>
     </item>
@@ -11,23 +12,27 @@
     <item>
         <selector>
             <item android:state_pressed="true">
-                <shape android:shape="oval">
-                    <solid android:color="@android:color/white"/>
+                <shape>
+                    <corners android:radius="6dp"/>
+                    <solid android:color="@android:color/transparent"/>
                 </shape>
             </item>
             <item android:state_focused="true">
-                <shape android:shape="oval">
-                    <solid android:color="@android:color/white"/>
+                <shape>
+                    <corners android:radius="6dp"/>
+                    <solid android:color="@android:color/transparent"/>
                 </shape>
             </item>
             <item android:state_hovered="true">
-                <shape android:shape="oval">
-                    <solid android:color="@android:color/white"/>
+                <shape>
+                    <corners android:radius="6dp"/>
+                    <solid android:color="@android:color/transparent"/>
                 </shape>
             </item>
             <item>
-                <shape android:shape="oval">
-                    <solid android:color="@color/s5_overlay_caution"/>
+                <shape>
+                    <corners android:radius="6dp"/>
+                    <solid android:color="@color/s5_overlay_black"/>
                 </shape>
             </item>
         </selector>
