@@ -20,31 +20,19 @@
             <item android:state_focused="true">
                 <shape>
                     <corners android:radius="6dp"/>
-                    <solid android:color="@android:color/transparent"/>
+                    <solid android:color="@android:color/white"/>
                 </shape>
             </item>
             <item android:state_hovered="true">
                 <shape>
                     <corners android:radius="6dp"/>
-                    <solid android:color="@android:color/transparent"/>
-                </shape>
-            </item>
-            <item android:state_activated="true">
-                <shape>
-                    <corners android:radius="6dp"/>
-                    <solid android:color="@color/black_opacity_activated"/>
-                </shape>
-            </item>
-            <item android:state_selected="true">
-                <shape>
-                    <corners android:radius="6dp"/>
-                    <solid android:color="@color/black_opacity_selected"/>
+                    <solid android:color="@android:color/white"/>
                 </shape>
             </item>
             <item>
                 <shape>
                     <corners android:radius="6dp"/>
-                    <solid android:color="@android:color/transparent"/>
+                    <solid android:color="@android:color/white"/>
                 </shape>
             </item>
         </selector>
